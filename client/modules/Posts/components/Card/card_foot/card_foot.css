@@ -1,0 +1,13 @@
+.card-foot-case {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    padding: 10px 15px;
+}
+.card-foot-metrics {
+
+}
+
+.card-foot-icons {
+
+}

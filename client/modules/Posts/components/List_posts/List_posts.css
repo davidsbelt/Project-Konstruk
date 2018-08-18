@@ -1,0 +1,26 @@
+.list-post-case {
+    display: block;
+}
+
+.list-post-case > .card-case{
+    margin-top: 20px;
+}
+
+
+
+@media all and (min-width: 768px) {
+    .list-post-case {
+        display: flex;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-post-case > .card-case{
+        margin-top: 10px;        
+    }
+
+    .list-post-case > .card-case:last-child{
+        /*margin-right: auto;*/      
+    }
+}

@@ -1,0 +1,23 @@
+.enroll-case {
+    display: flex;
+    padding: 0px 2px;
+}
+
+.enroll-met, .enroll-icon {
+    font-size: 0.75em;
+    border-radius: 10px;
+    padding: 1.2px 6px;
+    margin: auto;
+    /*color: white;*/
+}
+
+.enroll-icon {
+    margin-right: -3px;
+    z-index: 1;
+    background-color: rgba(148, 161, 224, .84); 
+    color: white;
+}
+
+.enroll-met {    
+    background-color: lightgrey;
+}

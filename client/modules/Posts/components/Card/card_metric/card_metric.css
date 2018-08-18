@@ -1,0 +1,18 @@
+.card-metric-case {
+    display: flex;
+    margin: 8px 3px;
+    justify-content: space-between;
+}
+
+.card-metric-left, .card-metric-right {
+    display: flex;
+    
+}
+
+@media all and (min-width: 768px) {
+    .card-metric-case {
+        justify-content: flex-end;
+        margin: auto;
+        /*margin-top: -29px;*/
+    }
+}

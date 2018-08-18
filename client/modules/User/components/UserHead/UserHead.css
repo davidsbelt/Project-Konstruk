@@ -1,0 +1,43 @@
+.user-head-case {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.user-head-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;    
+}
+
+.user-head-pic-upload {
+    
+}
+
+.user-head-icons {
+    display: flex;
+    padding-left: 5px;
+    margin: auto;    
+}
+
+.user-head-icons i, .user-rp i{
+    cursor: pointer;
+    padding: 0px 10px;
+    font-size: 1.3em;    
+}
+
+.user-lp {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-rp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-rp i{
+    margin: auto;
+}

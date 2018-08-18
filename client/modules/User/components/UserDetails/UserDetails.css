@@ -1,0 +1,30 @@
+.user-details-form {
+    padding: 0px 10px;
+    /*border: 1px solid #ccc;*/
+}
+
+.user-details-form > label {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+}
+
+.user-details-form input[type=text], .user-details-form input[type=password], .user-details-form #mantra {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1em;
+  outline: none;
+  display: flex;
+}
+
+.user-details-form #bio {
+    display: block;
+}
+
+.user-details-form span {
+    padding: 9px 10px;
+    font-size: 0.8em;
+    display: none;
+}

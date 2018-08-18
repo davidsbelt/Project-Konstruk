@@ -1,0 +1,111 @@
+.read-head-handle {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+} 
+
+.read-head-case {
+    display: block;
+    padding: 0px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.read-user-case {
+    display: flex;
+}
+
+.read-pic {
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;/*fall-back for browsers not supporting object-fit*/
+    cursor: pointer;
+    object-fit: cover;
+    padding: 0px 0px 20px 0px;
+}
+
+.read-topic {    
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .80);
+}
+
+.read-intro {
+    max-height: 80px;
+    -webkit-line-clamp: 2!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    display: -webkit-box!important;
+    -webkit-box-orient: vertical;
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, .54);
+    margin-bottom: 25px 
+}
+
+.read-user-pic {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.read-metric-case {
+    display: block;
+    padding-left: 15px;
+}
+
+
+.read-user-name {
+    padding: 0px 0px 5px 0px; 
+    font-weight: bold; 
+    color: rgba(148, 161, 224, .84);
+    font-size: 0.9em;
+}
+
+.read-user-mantra {
+    max-height: 80px;
+    -webkit-line-clamp: 2!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    display: -webkit-box!important;
+    -webkit-box-orient: vertical;
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, .74);
+}
+
+.read-metric {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, .54);
+    padding-top: 5px;
+}
+
+@media all and (min-width: 768px) {
+    .read-head-handle {
+        flex-direction: row-reverse;
+        height: 55vh;
+        padding: 0px 30px 30px 30px;
+    }  
+
+    .read-pic {
+        min-width: 45vw;
+        height: auto;
+        padding: 0px;
+    }
+
+    .read-head-case {
+        margin: auto;
+        min-width: 45vw;
+    }
+
+    .read-topic {    
+        font-size: 1.9em;
+    }   
+}

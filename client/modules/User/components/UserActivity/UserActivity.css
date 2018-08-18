@@ -1,0 +1,52 @@
+.user-activity-case {
+    padding: 15px 5px;
+}
+
+.u-a-stream-case {
+    border: 0.5px solid rgba(0,0,0,.10);
+    border-radius: 2.5px;
+}
+
+
+.u-a-head {
+    font-size: 15.2px;
+    padding: 20px 20px;
+    font-weight: bold;
+}
+
+.u-a-body {
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.u-a-b-left {
+    width: 85%;
+}
+
+.u-a-topic {
+    font-size: 15.2px;
+    padding: 10px 5px 10px 15px;
+    font-weight: bold; 
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.90);
+}
+
+.u-a-metric {
+    font-size: 12px;
+    padding: 5px 15px;
+    color: rgba(148, 161, 224, .84);/* rgba(74, 155, 112, .84)//rgba(92, 111, 206, .84);*/
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.u-a-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 10px 15px 10px 10px;
+
+}

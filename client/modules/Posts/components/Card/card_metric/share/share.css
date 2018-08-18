@@ -1,0 +1,21 @@
+.share-case {
+    display: flex;
+    padding: 0px 2px;
+}
+
+.share-icon {
+    font-size: 1.2em;
+    color: blue; 
+    padding: 0px;
+    margin-right: -3px;
+    z-index: 1;
+}
+
+.share-met {
+    font-size: 0.75em;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 1.2px 6px;
+    margin: auto;
+    /*color: white;*/
+}

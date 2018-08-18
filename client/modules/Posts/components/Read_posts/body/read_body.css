@@ -1,0 +1,11 @@
+.read-body {
+    display: block;
+    padding: 30px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.read-content {
+    font-size: 1.1em;
+    line-height: 1.6em;    
+}

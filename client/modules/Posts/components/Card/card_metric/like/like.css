@@ -1,0 +1,21 @@
+.like-case {
+    display: flex;
+    padding: 0px 2px;
+}
+
+.like-icon {
+    font-size: 1.2em;
+    color: red; 
+    padding: 0px;
+    margin-right: -3px;
+    z-index: 1;
+}
+
+.like-met {
+    font-size: 0.75em;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 1.2px 6px;
+    margin: auto;
+    /*color: white;*/
+}

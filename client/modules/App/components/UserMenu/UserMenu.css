@@ -1,0 +1,102 @@
+.user-dropdown {
+  position: relative;
+  
+}
+
+.userIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;/*fall-back for browsers not supporting object-fit*/
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.navMenuContent {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: -10px;
+  width: 250px;/* adjust this in the future*/
+  max-height: 400px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0,0,0,0.2);
+  z-index: 50;  
+}
+
+.navMenuContent > ul {
+  list-style-type: none; 
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+
+.navMenuContent > ul > li {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  
+}
+
+.navMenuContent > ul > li:first-of-type {
+  border-top: 0.5px solid rgba(0,0,0,0.1);
+  padding-top: 0px;
+}
+
+.navMenuContent > ul > li > a {  
+  color: black;
+  padding: 15px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.navMenuContent > ul > li > a:hover {
+  background-color: #f1f1f1
+}
+
+
+.userIcon:hover ~ .navMenuContent {
+  display: block;
+}
+
+.navMenuContent:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 18px;
+  top: -19px;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid white;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 6;    
+}
+
+.navMenuContent:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: -21.5px;
+  width: 0;
+  height: 0;
+  border-bottom: 11px solid rgba(0,0,0,0.1);
+  border-top: 11px solid transparent;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  z-index: 4;    
+}
+
+@media all and (min-width: 768px) {
+  .baccaIcon{
+    display: none;
+  }
+
+ .navMenuContent {   
+    min-width: 350px;
+    min-height: auto;
+  }
+}

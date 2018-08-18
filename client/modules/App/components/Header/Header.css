@@ -1,0 +1,194 @@
+/*Header signup button*/
+
+
+.signupButton {
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+.signupButton > div {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+.signupButton:hover div {
+  transform: rotateX(-90deg);
+}
+
+.signupButton > div >span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 0.1px solid black;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 30px;
+  font-size: 13.5px;
+  text-align: center;
+  text-transform: none;
+}
+
+.signupButton > div > span:nth-child(1) {
+  color: black;
+  transform: translate3d(0, 0, 15px);
+  -webkit-transform: translate3d(0, 0, 15px);
+}
+
+.signupButton > div >span:nth-child(2) {
+  color: #fff;
+  background: black;
+  transform: rotateX(90deg) translate3d(0, 0, 15px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 15px);
+}
+
+
+header {
+    /*background-color: rgb(239, 245, 249);
+    border-bottom: 0.2px solid rgba(0,0,0,.10);
+    box-shadow: 0 0.5px 2px rgba(43, 41, 30,.2);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px;
+    margin-right: 0px;
+   
+}
+
+
+.logo {
+    display: flex;
+    height: 75px;     
+}
+
+.baccaImg {
+  display: none;
+  height: 47px;
+  margin-top: 13px;
+  margin-bottom: 8px;
+  margin-left: 1px;
+}
+
+.baccaIcon{
+  display: block;
+  height: 65px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  margin-left: 1px;
+  padding-bottom: 5px;
+}
+
+/*elements that will be turned off and on as required*/
+.headNav {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  z-index: 1;
+  padding-left: 5px;
+}
+
+.loggedIn {
+  position: relative;
+  display: flex;  
+  z-index: 3;
+}
+
+.loggedOut {
+   margin-top: 5px;
+   margin-right: 10px;
+}
+
+.NavTopright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ /* position: absolute;
+  top: 0;
+  right: 0;*/
+  margin-top: 18px;  
+  padding-right: 5px;  
+  z-index: 2;  
+}
+
+.NavNotifications {
+  margin-top: 12px;
+  margin-right: 13px;
+}
+
+.NavFacebook, .NavTwiter {
+  margin-top: 25px;
+  margin-left: 15px;
+  /*to change fontawesome background color*/  
+  cursor: pointer;
+  transform: 500ms;
+  font-size: 18.5px;
+}
+.NavFacebook{
+  color: black/*rgb(59, 89, 152);  */ 
+}
+
+.NavTwiter {
+  /*color: rgb(0, 132, 180);*/
+  color: black /*rgb(0, 172, 237);  */
+}
+
+.NavFacebook:hover, .NavTwiter:hover {
+  font-size: 1.4em;
+  margin-left: 14px;
+  margin-top: 24px;
+}
+
+.NavFacebook:hover {
+  color: rgb(59, 89, 152);
+}
+
+.NavTwiter:hover {
+  color: rgb(0, 172, 237);
+}
+
+.NavSearchbar {
+  margin-top: 4px;
+  margin-right: 13px;
+}
+
+@media all and (min-width: 768px) {
+  .headNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 110px;
+  }
+
+  .loggedIn{
+    position: relative;
+    padding-left: 8px;
+  }
+  
+  .NavTopright {
+    padding-right: 110px;
+  }
+   
+  .NavNotifications{
+    margin-right: 16px;
+  }
+   
+  .baccaImg{
+    display: block;
+  }
+
+  .baccaIcon {
+      display: none;
+  }
+  
+  .signupButton {
+    width: 100px; 
+    min-height: auto;
+  }
+ 
+}
