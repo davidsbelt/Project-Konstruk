@@ -20,7 +20,3 @@ export function toggleUserMenuIcon(state = false, action){
     }    
 }
 
-/**fetch user login details reducer 
-export function fetchUserLoginDetails(state =[], action){
-    
-}*/
