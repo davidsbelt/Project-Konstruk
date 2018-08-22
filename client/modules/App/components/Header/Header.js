@@ -8,17 +8,40 @@ import UserMenu from '../UserMenu/UserMenu.js';
 
 
 /**
- * using redux, fetch data for the header parts asynchronously if the store is empty.
- * For now will fetch dummy data from server with a time-out
+ * sibling/otherwise (e.g post reading) component triggering the customNav will dispatch
+ * header action for the customNav on mount and agian on dismounting
  */
 class Header extends React.Component {
 
     componentDidMount(){
         //fetch data to populate components
+        //dispatch action to get users data
         
-    }
+    } 
+
+        
 
     render(){	
+        /*calls the login method in authentication service assuming auth0
+        login = () => {
+            this.props.auth.login();
+        }
+        // calls the logout method in authentication service
+        logout = () => {
+            this.props.auth.logout();
+        }
+        */
+        /* authentication simulating function, should be later changed to something
+        like:
+
+        const {isAuthenticated} = this.props.auth;
+
+        assuming auth0
+        */  
+        const isAuthenticated = () => {
+            return true;//simulate an authenticated connection
+        }
+
         return (
             <header>                
                 <div className='headNav'>
@@ -30,19 +53,38 @@ class Header extends React.Component {
                     </div>               
                 </div>
 
+
+
+                <div>
+                    {this.props.showCustomnav && (
+                            <div className='edit this with a custom nav component'></div>
+                        )
+                    }
+                </div>
+                
+                
                 <div className='NavTopright'>
                     
-                    <div className='loggedOut'>
-                        <div className='signupButton'>
-                            <div>
-                                <span>Sign up</span>
-                                <span>Sign in</span>
+                    {
+                        isAuthenticated() && (
+                        <div className='loggedOut'>
+                            <div className='signupButton'>
+                                <div>
+                                    <span>Sign up</span>
+                                    <span>Sign in</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='loggedIn'>
-                       <UserMenu/>                       
-                    </div>                            
+                        )
+                    }
+                    {
+                        !isAuthenticated() && (
+                        <div className='loggedIn'>
+                            <UserMenu/>                       
+                        </div>
+                        )
+                    }
+                                                
                 </div>              
             </header>
             )
@@ -52,15 +94,10 @@ class Header extends React.Component {
 // Retrieve data from store/state as props
 const mapStateToProps = (state) =>{
   return {
-	  login: state.toggleLogin,
-	  userMenuIcon: state.ToggleUserMenuIcon
+	  showCustomnav: state.toggleCustomNav
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-	  loginDetails: (url) => dispatch(fetchUserLoginDetails(url))		
-  };
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+export default connect(mapStateToProps)(Header);

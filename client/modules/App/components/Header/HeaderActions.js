@@ -1,25 +1,13 @@
-// Export action functions
+// Export constants
 
-/**toggle the login button  */
-export function toggleLogin(bool){
+export const TOGGLE_CUSTOMNAV = 'TOGGLE_CUSTOMNAV';
+ 
+//this action will be dispatched from the read post view to customize the header for the post being read
+export function toggleCustomNav(bool){
     return {
-        type: 'TOGGLE_LOGIN',
-        showLogin: bool
+        type: TOGGLE_CUSTOMNAV,
+        show: bool,
     }
 }
 
-/**toggle the user menu icon after the login */
-export function toggleUserMenuIcon(bool) {
-    return {
-        type: 'TOGGLE_USER_MENU_ICON',
-        showUserMenuIcon: bool
-    }
-}
 
-/**fetch user details to be used in rendering the custom face of the  */
-export function fetchLoginDetails(loginDetails){
-    return {
-        type: 'FETCH_LOGIN_DETAILS',
-        loginDetails
-    }
-}

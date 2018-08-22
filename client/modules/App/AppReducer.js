@@ -1,19 +1,12 @@
-//export reducers functions
+// Import Actions
+import { TOGGLE_USER_MENU_ICON } from './AppActions.js';
 
-/**toggle login reducer */
-export function toggleLogin (state = true, action){
-    switch (action.type){
-        case 'TOGGLE_LOGIN':
-            return action.showLogin;
-        default:
-            return state;  
-    }  
-}
+//export reducers functions
 
 /**toggle user menu icon */
 export function toggleUserMenuIcon(state = false, action){
     switch (action.type){
-        case 'TOGGLE_USER_MENU_ICON':
+        case TOGGLE_USER_MENU_ICON:
             return action.showUserMenuIcon;
         default:
             return state

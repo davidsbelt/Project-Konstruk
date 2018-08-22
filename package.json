@@ -16,6 +16,7 @@
   "author": "Chuka-ogwude David _ALPHA_",
   "license": "ISC",
   "devDependencies": {
+    "@types/redux-first-router": "^1.10.4",
     "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",

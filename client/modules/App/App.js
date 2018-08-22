@@ -3,7 +3,8 @@
  */
 
 import React, {PropTypes} from 'react';
-import scenes from '../../scenes.js'
+import scenes from '../../scenes.js';
+import {connect} from 'react-redux';
 /*import './assets/fonts/bacca-fonts.css';
 import './assets/fonts/letter-fonts/letter-fonts.css';*/
 import SubNav from './components/SubNav/SubNav.js';
